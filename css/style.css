@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.containercard {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.pokemonCard {
+  border: black solid 1px;
+  width: 330px;
+  height: 480px;
+}
+
+.pokemonCard .imgPokemon {
+  width: 315px;
+  height: 210px;
+  border: white solid 2px;
+}
