@@ -101,4 +101,39 @@ section {
 .skill .information {
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: bold;
+}
+
+.skill3__item3,
+.skill3__item2,
+.skill3__item1 {
+  background: rgb(249, 248, 248);
+  background: radial-gradient(
+    circle,
+    rgba(249, 248, 248, 1) 10%,
+    rgba(191, 192, 193, 1) 87%
+  );
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.skill3 img {
+  position: relative;
+  top: 5px;
+}
+.skill3__item1 {
+  padding-right: 12px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.skill3__item2 {
+  position: relative;
+  right: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.skill3__item2::before {
+  content: "|";
+  font-size: 20px;
 }
