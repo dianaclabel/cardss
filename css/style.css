@@ -16,7 +16,7 @@ section {
   margin: auto;
 }
 .containercard {
-  width: 390px;
+  width: 350px;
   height: 500px;
   border-radius: 10px;
   background-image: url("../asset/fondo.jpg");
@@ -26,7 +26,7 @@ section {
 
 .pokemonCard {
   border: black solid 1px;
-  width: 370px;
+  width: 330px;
   height: 480px;
   padding: 10px;
   border-radius: 10px;
@@ -58,14 +58,33 @@ section {
 
 .pokemonCard figure {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: white solid 2px;
+  border-radius: 10px;
 }
 
 .pokemonCard .imgPokemon {
-  width: 380px;
-  height: 250px;
-  border: white solid 2px;
-  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+}
+
+.pokemonCard figure figcaption {
+  background: rgb(249, 248, 248);
+  background: radial-gradient(
+    circle,
+    rgba(249, 248, 248, 1) 10%,
+    rgba(191, 192, 193, 1) 87%
+  );
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.skill {
+  margin-top: 40px;
 }
 
 .skill1,
@@ -82,13 +101,14 @@ section {
   width: 20px;
   height: 20px;
 }
+
 .skill1,
 .skill2 {
   font-weight: bold;
 }
 
 .skill1 {
-  margin: 20px;
+  margin: 20px 20px 30px 20px;
 }
 
 .skill2,
@@ -99,9 +119,16 @@ section {
 }
 
 .skill .information {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.skill3 {
+  position: relative;
+  right: 18px;
+}
+.skill3 img {
+  margin: 0 5px 0 5px;
 }
 
 .skill3__item3,
@@ -113,16 +140,16 @@ section {
     rgba(249, 248, 248, 1) 10%,
     rgba(191, 192, 193, 1) 87%
   );
-  font-size: 12px;
-  padding: 5px;
+  font-size: 10px;
+  padding: 10px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  height: 30px;
 }
-.skill3 img {
-  position: relative;
-  top: 5px;
-}
+
 .skill3__item1 {
-  padding-right: 12px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -132,8 +159,17 @@ section {
   right: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: 10px;
 }
 .skill3__item2::before {
-  content: "|";
+  content: "| ";
   font-size: 20px;
+  margin-right: 10px;
+}
+.skill3__item3 {
+  position: relative;
+  right: 10px;
+}
+.skill3__item3 img {
+  margin: 0 0 0 5px;
 }
